@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Encode";
+}
+
+<h2>Encrypt</h2>
+
+    <div class="container-fluid">
+        <div class="row">
+            <form method="post">
+                <div class="form-group">
+                    <label for="text">Text for Encode</label>
+                    <textarea id="text" name="encodeText" width="400px" height="200px"></textarea>
+               </div>  
+                <div class="form-group">
+                    <label>encode</label>
+                    <input type="radio" name="encode" value="encode" checked/>
+                    <label>decode</label>
+                    <input type="radio" name="encode" value="decode" />
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+    <hr class="" />
+
+        <div class="jumbotron">
+            <p class="text-success">Your result is:</p>
+            <p class="text-primary">@ViewBag.Result</p>
+        </div>      
+
+
+
